@@ -31,11 +31,11 @@
 </head>
 <body>
   <header>
-    <header>
+    <header class="fixed top-0 left-0 w-full">
 
         <!-- nav bar part here -->
          
-        <div class="bg-navback sticky">
+        <div class="bg-navback ">
           <div class="flex">
             <nav class="w-11/12 mx-auto bg-navback">
               <div class="navbar bg-navback">
@@ -51,24 +51,27 @@
                 <div class="navbar-end gap-5 items-center hidden lg:flex">
                   <div class="flex gap-5">
                     <img src="./assets/coin.png" alt="">
-                    <p class="font-medium text-coincolor"><span>0000</span><span> BDT</span></p>
+                    <p class="font-medium text-coincolor"><span id="main_balance">6900</span><span> BDT</span></p>
                   </div>
                 </div>
               </div>
             </nav>
           </div>
         </div>
-        
-        <div class=" mt-20 flex gap-5 justify-center items-center">
+        <!-- nav ber end here -->
+
+        <!-- two btn here -->
+        <div class=" mt-10 flex gap-5 justify-center items-center">
              
           <button class="btn bg-clifford font-bold">Donation</button>
           <button  class=" btn bg-neutral-400">History</button>
 
         </div>
+        <!-- two btn end -->
           </header>
 
         <main>
-          <div class="container mx-auto p-4">
+          <div class="container mx-auto p-4 mt-40">
             <!-- Card 1 -->
             <div class="bg-white rounded-lg shadow-md p-6 mb-6">
               <div class="flex items-start">
@@ -76,7 +79,7 @@
                 <div class="ml-4 w-2/3">
                   <div class="flex items-center mb-5">
                     <img src="./assets/coin.png" alt="coin icon" class="w-6 h-6">
-                    <span id="donate_frist_amount" class="font-medium text-coincolor"> 0 </span><span>  BDT</span>
+                    <span id="donate_frist_amount" class="font-medium text-coincolor"> 20 </span><span>  BDT</span>
                   </div>
                   <h3 class="text-lg font-bold">Donate for Flood at Noakhali, Bangladesh</h3>
                   <p class="text-gray-600 text-sm mt-10">
@@ -94,15 +97,15 @@
                 <div class="ml-4 w-2/3">
                   <div class="flex items-center mb-5">
                     <img src="./assets/coin.png" alt="coin icon" class="w-6 h-6">
-                    <span class="text-yellow-500 font-bold ml-2">0 BDT</span>
+                    <span id="donate_frist_amount" class="font-medium text-coincolor"> 20 </span><span>  BDT</span>
                   </div>
                   <h3 class="text-lg font-bold">Donate for Flood at Noakhali, Bangladesh</h3>
                   <p class="text-gray-600 text-sm mt-10">
                     The recent floods in Noakhali have caused unprecedented damage, leaving thousands of families displaced and homes destroyed. Roads have been washed away, making it difficult for aid to reach those most in need. Essential services such as water, electricity, and healthcare have been severely impacted, with many areas facing a critical shortage of basic supplies.
                    Your contribution, regardless of the amount, will play a crucial role in providing immediate relief to the affected communities. Donations will be used to distribute food, clean water, medical supplies, and temporary shelter to families who have lost everything. Moreover, your support will help rebuild local infrastructure, ensuring long-term recovery and rehabilitation for these devastated regions. 
                   </p>
-                  <input id="" type="text" placeholder="Write Donation Amount" class="mt-10 p-2 w-full border border-gray-300 rounded-lg">
-                  <button class=" text-black font-bold py-2 px-4 mt-5 rounded-lg w-full hover:bg-clifford bg-clifford">Donate Now</button>
+                  <input id="donate_input_one" type="text" placeholder="Write Donation Amount" class="mt-10 p-2 w-full border border-gray-300 rounded-lg">
+                  <button id="donate_btn-1" class="text-black font-bold py-2 px-4 mt-5 rounded-lg w-full hover:bg-clifford bg-clifford">Donate Now</button>
                 </div>
               </div>
             </div>
@@ -112,21 +115,29 @@
                 <div class="ml-4 w-2/3">
                   <div class="flex items-center mb-5">
                     <img src="./assets/coin.png" alt="coin icon" class="w-6 h-6">
-                    <span class="text-yellow-500 font-bold ml-2">0 BDT</span>
+                    <span id="donate_frist_amount" class="font-medium text-coincolor"> 20 </span><span>  BDT</span>
                   </div>
                   <h3 class="text-lg font-bold">Donate for Flood at Noakhali, Bangladesh</h3>
                   <p class="text-gray-600 text-sm mt-10">
                     The recent floods in Noakhali have caused unprecedented damage, leaving thousands of families displaced and homes destroyed. Roads have been washed away, making it difficult for aid to reach those most in need. Essential services such as water, electricity, and healthcare have been severely impacted, with many areas facing a critical shortage of basic supplies.
                    Your contribution, regardless of the amount, will play a crucial role in providing immediate relief to the affected communities. Donations will be used to distribute food, clean water, medical supplies, and temporary shelter to families who have lost everything. Moreover, your support will help rebuild local infrastructure, ensuring long-term recovery and rehabilitation for these devastated regions. 
                   </p>
-                  <input type="text" placeholder="Write Donation Amount" class="mt-10 p-2 w-full border border-gray-300 rounded-lg">
-                  <button class=" text-black font-bold py-2 px-4 mt-5 rounded-lg w-full hover:bg-clifford bg-clifford">Donate Now</button>
+                  <input id="donate_input_one" type="text" placeholder="Write Donation Amount" class="mt-10 p-2 w-full border border-gray-300 rounded-lg">
+                  <button id="donate_btn-1" class="text-black font-bold py-2 px-4 mt-5 rounded-lg w-full hover:bg-clifford bg-clifford">Donate Now</button>
                 </div>
               </div>
             </div>
+            
           
             <!-- Card 2 -->
             
+          </div>
+
+
+          <!-- history itmem -->
+
+          <div id="history-list" class="flex flex-col gap-6 items-center justify-center">
+
           </div>
           
         </main>
