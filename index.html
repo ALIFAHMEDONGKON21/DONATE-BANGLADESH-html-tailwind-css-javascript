@@ -40,7 +40,7 @@
             <nav class="w-11/12 mx-auto bg-navback">
               <div class="navbar bg-navback">
                 <div class="navbar-start p-0 py-2">
-                  <button class="btn hover:bg-clifford bg-clifford w-28 font-bold">Blog</button>
+                  <button id="blog-btn" class="btn hover:bg-clifford bg-clifford w-28 font-bold">Blog</button>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1 items-center gap-2 text-lg font-medium">
@@ -61,7 +61,7 @@
         <!-- nav ber end here -->
 
         <!-- two btn here -->
-        <div class=" mt-10 flex gap-5 justify-center items-center">
+        <div id="historanddonatecontainer" class=" mt-10 flex gap-5 justify-center items-center">
              
           <button class="btn bg-clifford font-bold">Donation</button>
           <button id="" class=" btn bg-neutral-400">History</button>
@@ -71,7 +71,7 @@
           </header>
 
         <main>
-          <div class="container mx-auto p-4 mt-40">
+          <div id="card-contioner" class="container mx-auto p-4 mt-40">
             <!-- Card 1 -->
             <div class="bg-white rounded-lg shadow-md p-6 mb-6">
               <div class="flex items-start">
@@ -168,12 +168,134 @@
               </div>
             </div>
           </div>
-          
-        </main>
 
+          <!-- thanks part end -->
+        
+          <!-- blogs -->
+          <div id="blogs-container" class="space-y-4 w-3/4 hidden mt-40">
+            <details class="group [&_summary::-webkit-details-marker]:hidden" open>
+              <summary
+                class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+              >
+                <h2 class="font-medium">Lorem ipsum dolor sit amet consectetur adipisicing?</h2>
+          
+                <svg
+                  class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+          
+              <p class="mt-4 px-4 leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa in,
+                recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis explicabo
+                consequuntur distinctio corporis earum similique!
+              </p>
+            </details>
+            <details class="group [&_summary::-webkit-details-marker]:hidden" open>
+              <summary
+                class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+              >
+                <h2 class="font-medium">Lorem ipsum dolor sit amet consectetur adipisicing?</h2>
+          
+                <svg
+                  class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+          
+              <p class="mt-4 px-4 leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa in,
+                recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis explicabo
+                consequuntur distinctio corporis earum similique!
+              </p>
+            </details>
+            <details class="group [&_summary::-webkit-details-marker]:hidden" open>
+              <summary
+                class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+              >
+                <h2 class="font-medium">Lorem ipsum dolor sit amet consectetur adipisicing?</h2>
+          
+                <svg
+                  class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+          
+              <p class="mt-4 px-4 leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa in,
+                recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis explicabo
+                consequuntur distinctio corporis earum similique!
+              </p>
+            </details>
+            <details class="group [&_summary::-webkit-details-marker]:hidden" open>
+              <summary
+                class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+              >
+                <h2 class="font-medium">Lorem ipsum dolor sit amet consectetur adipisicing?</h2>
+          
+                <svg
+                  class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+          
+              <p class="mt-4 px-4 leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa in,
+                recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis explicabo
+                consequuntur distinctio corporis earum similique!
+              </p>
+            </details>
+          
+            <details class="group [&_summary::-webkit-details-marker]:hidden">
+              <summary
+                class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+              >
+                <h2 class="font-medium">Lorem ipsum dolor sit amet consectetur adipisicing?</h2>
+          
+                <svg
+                  class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+          
+              <p class="mt-4 px-4 leading-relaxed text-gray-700">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa in,
+                recusandae laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis explicabo
+                consequuntur distinctio corporis earum similique!
+              </p>
+            </details>
+          </div>
+        </main>
+        
       
           <script src="./js/index.js"></script>
           <script src="./js/utlites.js"></script>
+          <script src="./blog.js"></script>
     
 </body>
 </html>

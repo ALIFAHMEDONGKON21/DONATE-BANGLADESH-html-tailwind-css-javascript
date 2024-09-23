@@ -55,6 +55,8 @@ document.getElementById('donate_btn-11')
       document.getElementById('donate_frist_amount1').innerText=dontownnew;
       document.getElementById('main_balance').innerText=mainblanceadd;
 
+      document.getElementById("modal").classList.remove("hidden");
+
 
       const historitem=document.createElement('div')
       historitem.className=' bg-white p-3 rounded-md w-3/5 h-32 border-2 border-indigo-500'
@@ -84,6 +86,8 @@ document.getElementById('donate_btn-12')
 
       document.getElementById('donate_frist_amount2').innerText=dontownnew;
       document.getElementById('main_balance').innerText=mainblanceadd;
+
+      document.getElementById("modal").classList.remove("hidden");
 
 
       const historitem=document.createElement('div')
