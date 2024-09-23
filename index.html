@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#B4F461',
+              coincolor:'#111111B3',
+              navback:'#F9F7F3'
+            }
+          }
+        }
+      }
+    </script>
+
+    
+  
+</head>
+<body>
+  <header>
+    <header>
+
+        <!-- nav bar part here -->
+         
+        <div class="bg-navback sticky">
+          <div class="flex">
+            <nav class="w-11/12 mx-auto bg-navback">
+              <div class="navbar bg-navback">
+                <div class="navbar-start p-0 py-2">
+                  <button class="btn hover:bg-clifford bg-clifford w-28 font-bold">Blog</button>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 items-center gap-2 text-lg font-medium">
+                    <img src="./assets/logo.png" alt="">
+                    <p class="text-black font-bold m-5 justify-center items-center">Donate Bangladesh</p>
+                  </ul>
+                </div>
+                <div class="navbar-end gap-5 items-center hidden lg:flex">
+                  <div class="flex gap-5">
+                    <img src="./assets/coin.png" alt="">
+                    <p class="font-medium text-coincolor"><span>0000</span><span> BDT</span></p>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        
+        <div class=" mt-20 flex gap-5 justify-center items-center">
+             
+          <button class="btn bg-clifford font-bold">Donation</button>
+          <button  class=" btn bg-neutral-400">History</button>
+
+        </div>
+          </header>
+
+        <main>
+          <div class="container mx-auto p-4">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+              <div class="flex items-start">
+                <img src="./assets/feni.png" alt="Flood in Noakhali" class="w-1/3 rounded-lg">
+                <div class="ml-4 w-2/3">
+                  <div class="flex items-center mb-5">
+                    <img src="./assets/coin.png" alt="coin icon" class="w-6 h-6">
+                    <span id="donate_frist_amount" class="font-medium text-coincolor"> 0 </span><span>  BDT</span>
+                  </div>
+                  <h3 class="text-lg font-bold">Donate for Flood at Noakhali, Bangladesh</h3>
+                  <p class="text-gray-600 text-sm mt-10">
+                    The recent floods in Noakhali have caused unprecedented damage, leaving thousands of families displaced and homes destroyed. Roads have been washed away, making it difficult for aid to reach those most in need. Essential services such as water, electricity, and healthcare have been severely impacted, with many areas facing a critical shortage of basic supplies.
+                   Your contribution, regardless of the amount, will play a crucial role in providing immediate relief to the affected communities. Donations will be used to distribute food, clean water, medical supplies, and temporary shelter to families who have lost everything. Moreover, your support will help rebuild local infrastructure, ensuring long-term recovery and rehabilitation for these devastated regions. 
+                  </p>
+                  <input id="donate_input_one" type="text" placeholder="Write Donation Amount" class="mt-10 p-2 w-full border border-gray-300 rounded-lg">
+                  <button id="donate_btn-1" class="text-black font-bold py-2 px-4 mt-5 rounded-lg w-full hover:bg-clifford bg-clifford">Donate Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+              <div class="flex items-start">
+                <img src="./assets/feni.png" alt="Flood in Noakhali" class="w-1/3 rounded-lg">
+                <div class="ml-4 w-2/3">
+                  <div class="flex items-center mb-5">
+                    <img src="./assets/coin.png" alt="coin icon" class="w-6 h-6">
+                    <span class="text-yellow-500 font-bold ml-2">0 BDT</span>
+                  </div>
+                  <h3 class="text-lg font-bold">Donate for Flood at Noakhali, Bangladesh</h3>
+                  <p class="text-gray-600 text-sm mt-10">
+                    The recent floods in Noakhali have caused unprecedented damage, leaving thousands of families displaced and homes destroyed. Roads have been washed away, making it difficult for aid to reach those most in need. Essential services such as water, electricity, and healthcare have been severely impacted, with many areas facing a critical shortage of basic supplies.
+                   Your contribution, regardless of the amount, will play a crucial role in providing immediate relief to the affected communities. Donations will be used to distribute food, clean water, medical supplies, and temporary shelter to families who have lost everything. Moreover, your support will help rebuild local infrastructure, ensuring long-term recovery and rehabilitation for these devastated regions. 
+                  </p>
+                  <input id="" type="text" placeholder="Write Donation Amount" class="mt-10 p-2 w-full border border-gray-300 rounded-lg">
+                  <button class=" text-black font-bold py-2 px-4 mt-5 rounded-lg w-full hover:bg-clifford bg-clifford">Donate Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+              <div class="flex items-start">
+                <img src="./assets/feni.png" alt="Flood in Noakhali" class="w-1/3 rounded-lg">
+                <div class="ml-4 w-2/3">
+                  <div class="flex items-center mb-5">
+                    <img src="./assets/coin.png" alt="coin icon" class="w-6 h-6">
+                    <span class="text-yellow-500 font-bold ml-2">0 BDT</span>
+                  </div>
+                  <h3 class="text-lg font-bold">Donate for Flood at Noakhali, Bangladesh</h3>
+                  <p class="text-gray-600 text-sm mt-10">
+                    The recent floods in Noakhali have caused unprecedented damage, leaving thousands of families displaced and homes destroyed. Roads have been washed away, making it difficult for aid to reach those most in need. Essential services such as water, electricity, and healthcare have been severely impacted, with many areas facing a critical shortage of basic supplies.
+                   Your contribution, regardless of the amount, will play a crucial role in providing immediate relief to the affected communities. Donations will be used to distribute food, clean water, medical supplies, and temporary shelter to families who have lost everything. Moreover, your support will help rebuild local infrastructure, ensuring long-term recovery and rehabilitation for these devastated regions. 
+                  </p>
+                  <input type="text" placeholder="Write Donation Amount" class="mt-10 p-2 w-full border border-gray-300 rounded-lg">
+                  <button class=" text-black font-bold py-2 px-4 mt-5 rounded-lg w-full hover:bg-clifford bg-clifford">Donate Now</button>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Card 2 -->
+            
+          </div>
+          
+        </main>
+
+      
+          <script src="./js/index.js"></script>
+          <script src="./js/utlites.js"></script>
+    
+</body>
+</html>
