@@ -17,6 +17,11 @@ document.getElementById('donate_btn-1')
       document.getElementById('main_balance').innerText=mainblanceadd;
 
 
+      document.getElementById("modal").classList.remove("hidden");
+      
+      
+
+
       const historitem=document.createElement('div')
       historitem.className=' bg-white p-3 rounded-md w-3/5 h-32 border-2 border-indigo-500'
 
@@ -27,6 +32,10 @@ document.getElementById('donate_btn-1')
       const hestorcontainer=document.getElementById('history-list')
       hestorcontainer.insertBefore(historitem,hestorcontainer.firstChild)
 })
+document.getElementById("close-modal-btn").addEventListener("click", function() {
+      document.getElementById("modal").classList.add("hidden");
+    });
+
 
 document.getElementById('donate_btn-11')
 .addEventListener('click',()=>{
