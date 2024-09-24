@@ -2,16 +2,23 @@ document.getElementById('donate_btn-1')
 .addEventListener('click',()=>{
       console.log("ok click here")
       const userinput=getinputfiled('donate_input_one');
-     
       const donateown=getinputfromuser('donate_frist_amount');
       const mainbanlace=getinputfromuser('main_balance');
-      const dontownnew=donateown+userinput;
+      if (isNaN(userinput) || userinput === "") {
+            alert("Please enter a valid number.");
+            return null;  
+        }
+      if (userinput < 0) {
+            alert("Please enter a non-negative amount.");
+            return null;
+      }  
       if(userinput>mainbanlace)
       {
-           alert("No blance")
-            return 
+            alert('Insufficient balance. You cannot donate more than your available balance.')
+            return
       }
-      const mainblanceadd=mainbanlace-dontownnew;
+      const mainblanceadd=mainbanlace-userinput;
+      const dontownnew=donateown+userinput;
 
       document.getElementById('donate_frist_amount').innerText=dontownnew;
       document.getElementById('main_balance').innerText=mainblanceadd;
@@ -19,9 +26,6 @@ document.getElementById('donate_btn-1')
 
       document.getElementById("modal").classList.remove("hidden");
       
-      
-
-
       const historitem=document.createElement('div')
       historitem.className=' bg-white p-3 rounded-md w-3/5 h-32 border-2 border-indigo-500'
 
@@ -45,12 +49,20 @@ document.getElementById('donate_btn-11')
       const donateown=getinputfromuser('donate_frist_amount1');
       const mainbanlace=getinputfromuser('main_balance');
       const dontownnew=donateown+userinput;
+      if (isNaN(userinput) || userinput === "") {
+            alert("Please enter a valid number.");
+            return null;  
+        }
+      if (userinput < 0) {
+            alert("Please enter a non-negative amount.");
+            return null;
+      }  
       if(userinput>mainbanlace)
       {
-           alert("No blance")
-            return 
+            alert('Insufficient balance. You cannot donate more than your available balance.')
+            return
       }
-      const mainblanceadd=mainbanlace-dontownnew;
+      const mainblanceadd=mainbanlace-userinput;
 
       document.getElementById('donate_frist_amount1').innerText=dontownnew;
       document.getElementById('main_balance').innerText=mainblanceadd;
@@ -77,12 +89,20 @@ document.getElementById('donate_btn-12')
       const donateown=getinputfromuser('donate_frist_amount2');
       const mainbanlace=getinputfromuser('main_balance');
       const dontownnew=donateown+userinput;
+      if (isNaN(userinput) || userinput === "") {
+            alert("Please enter a valid number.");
+            return null;  
+        }
+      if (userinput < 0) {
+            alert("Please enter a non-negative amount.");
+            return null;
+      }  
       if(userinput>mainbanlace)
       {
-           alert("No blance")
+            alert('Insufficient balance. You cannot donate more than your available balance.')
             return 
       }
-      const mainblanceadd=mainbanlace-dontownnew;
+      const mainblanceadd=mainbanlace-userinput;
 
       document.getElementById('donate_frist_amount2').innerText=dontownnew;
       document.getElementById('main_balance').innerText=mainblanceadd;
