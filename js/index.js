@@ -27,7 +27,7 @@ document.getElementById('donate_btn-1')
       document.getElementById("modal").classList.remove("hidden");
       
       const historitem=document.createElement('div')
-      historitem.className=' bg-white p-3 rounded-md w-3/5 h-32 border-2 border-indigo-500'
+      historitem.className=' bg-white p-3 rounded-md w-3/5 h-40 border-2 bg-white border'
 
       historitem.innerHTML=`
       <p>${userinput} Taka is Donated for famine-2024 at Feni, Bangladesh </p>
@@ -71,7 +71,7 @@ document.getElementById('donate_btn-11')
 
 
       const historitem=document.createElement('div')
-      historitem.className=' bg-white p-3 rounded-md w-3/5 h-32 border-2 border-indigo-500'
+      historitem.className=' bg-white p-3 rounded-md w-3/5 h-40 border-2 bg-white border'
 
       historitem.innerHTML=`
       <p>${userinput} Taka is Donated for famine-2024 at Feni, Bangladesh </p>
@@ -111,7 +111,7 @@ document.getElementById('donate_btn-12')
 
 
       const historitem=document.createElement('div')
-      historitem.className=' bg-white p-3 rounded-md w-3/5 h-32 border-2 border-indigo-500'
+      historitem.className=' bg-white p-3 rounded-md w-3/5 h-40 border-2 bg-white border'
 
       historitem.innerHTML=`
       <p>${userinput} Taka is Donated for famine-2024 at Feni, Bangladesh </p>
