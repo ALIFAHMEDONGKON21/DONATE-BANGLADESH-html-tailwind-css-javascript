@@ -4,7 +4,7 @@ document.getElementById('donate_btn-1')
       const userinput=getinputfiled('donate_input_one');
       const donateown=getinputfromuser('donate_frist_amount');
       const mainbanlace=getinputfromuser('main_balance');
-      if (isNaN(userinput) || userinput === "") {
+      if (isNaN(userinput) || userinput === "" || typeof userinput !=='number') {
             alert("Please enter a valid number.");
             return null;  
         }
