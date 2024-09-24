@@ -71,18 +71,18 @@
           </header>
 
         <main>
-          <div id="card-contioner" class="container mx-auto p-4 mt-40">
+          <div id="card-contioner" class="container mx-auto p-4 mt-40 grid  grid-rows-3">
             <!-- Card 1 -->
             <div class="bg-white rounded-lg shadow-md p-6 mb-6">
-              <div class="flex items-start">
-                <img src="./assets/feni.png" alt="Flood in Noakhali" class="w-1/3 rounded-lg">
+              <div class="flex flex-col sm:flex-row items-start">
+                <img src="./assets/feni.png" alt="Flood in Noakhali" class="w-full sm:w-1/3 rounded-lg mb-4 sm:mb-0">
                 <div class="ml-4 w-2/3">
                   <div class="flex items-center mb-5">
                     <img src="./assets/coin.png" alt="coin icon" class="w-6 h-6">
                     <span id="donate_frist_amount" class="font-medium text-coincolor"> 20 </span><span>  BDT</span>
                   </div>
                   <h3 class="text-lg font-bold">Donate for Flood at Noakhali, Bangladesh</h3>
-                  <p class="text-gray-600 text-sm mt-10">
+                  <p class="text-gray-600 text-sm mt-4 sm:mt-10">
                     The recent floods in Noakhali have caused unprecedented damage, leaving thousands of families displaced and homes destroyed. Roads have been washed away, making it difficult for aid to reach those most in need. Essential services such as water, electricity, and healthcare have been severely impacted, with many areas facing a critical shortage of basic supplies.
                    Your contribution, regardless of the amount, will play a crucial role in providing immediate relief to the affected communities. Donations will be used to distribute food, clean water, medical supplies, and temporary shelter to families who have lost everything. Moreover, your support will help rebuild local infrastructure, ensuring long-term recovery and rehabilitation for these devastated regions. 
                   </p>
@@ -137,8 +137,8 @@
 
           <!-- history itmem -->
          
-          <div id="history-list" class=" hidden mt-52  ">
-            <div id="history-list1" class="flex flex-col gap-6 mr-20 max-auto items-center justify-center">
+          <div id="history-list" class=" hidden  mt-52 w-full  ">
+            <div id="history-list1" class="flex flex-col gap-6 mx-auto max-w-full sm:max-w-screen-md items-center justify-center p-6 bg-white border border-white shadow-lg">
 
             </div>
           
@@ -150,7 +150,7 @@
             >
               <!-- Modal Box -->
               <div
-                class="flex flex-col items-center justify-between bg-white p-20 rounded w-1/3"
+                class="flex flex-col items-center justify-between bg-white  rounded  p-10 sm:p-20 w-11/12 sm:w-1/3"
               >
                 <h3
                   class="text-5xl leading-6 font-medium text-purple-700 tracking-wider uppercase"
