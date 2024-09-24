@@ -131,11 +131,14 @@ document.getElementById('history-tab').addEventListener('click',()=>{
 
       document.getElementById('history-tab').classList.add(
             "bg-clifford",
-            "text-white"
+            "text-white",
+            "hover:bg-clifford"
       )
       document.getElementById('donation-tab').classList.remove(
             "bg-clifford",
-            "text-white"
+            "text-white",
+            "hover:bg-clifford"
+            
       )
       
 })
@@ -147,11 +150,13 @@ document.getElementById('donation-tab').addEventListener('click',()=>{
 
       document.getElementById('history-tab').classList.remove(
             "bg-clifford",
-            "text-white"
+            "text-white",
+             "hover:bg-clifford"
       )
       document.getElementById('donation-tab').classList.add(
             "bg-clifford",
-            "text-white"
+            "text-white",
+             "hover:bg-clifford"
       )
       
 })
