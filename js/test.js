@@ -1,25 +1,42 @@
-function layeredDiscountedTotal (quantity){
-    const protom100tardam = 100;
-    const pore100bashi = 90;
-    const pore200bashi = 70;
+function add(num1, num2) {
+    const sum = num1 + num2;
+    return sum;
+}
 
-    if(quantity <= 100){
-        const total = quantity * protom100tardam;
-        return total;
+function subtract(num1, num2) {
+    return num1 - num2;
+}
+
+function multiply(num1, num2) {
+    return num1 * num2;
+}
+
+function divide(num1, num2) {
+    return num1 / num2;
+}
+
+console.log(add(3,5))
+
+function calculator(a, b, kajki) {
+    if (kajki === 'add') {
+        const result = add(a, b);
+        return result;
     }
-    else if (quantity <= 200){
-        const protom100= 100 * first100Price;
-        const bskikoitssache = quantity - 100;
-        const bskikoitssachetardam = bskikoitssache * second100Price;
-        const total = first100Total + remainingTotal;
-        return total;
+    else if(kajki === 'subtract'){
+        const result = subtract(a, b);
+        return result;
     }
-    else{
-        const first100Total = 100 * first100Price;
-        const second100Total = 100 * second100Price;
-        const bakikoitaache = quantity - 200;
-        const remainingTotal = bakikoitaache* above200Price;
-        const total = first100Total + second100Total + remainingTotal;
-        return total;
+    else if(kajki === 'multiply'){
+        return multiply(a, b);
+    }
+    else if (kajki === 'divide'){
+        return divide(a, b);
+    }
+    else {
+        return "Only 'add', 'subtract', 'multiply', 'divide' operation is allowed."
     }
 }
+
+
+const result = calculator(5, 7, 'add');
+console.log(result);

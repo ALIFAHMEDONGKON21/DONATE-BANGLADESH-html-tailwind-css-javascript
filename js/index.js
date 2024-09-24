@@ -29,7 +29,7 @@ document.getElementById('donate_btn-1')
       <p>${userinput} Taka is Donated for famine-2024 at Feni, Bangladesh </p>
       <p>${new Date().toLocaleDateString()}</p>
     `
-      const hestorcontainer=document.getElementById('history-list')
+      const hestorcontainer=document.getElementById('history-list1')
       hestorcontainer.insertBefore(historitem,hestorcontainer.firstChild)
 })
 document.getElementById("close-modal-btn").addEventListener("click", function() {
@@ -65,7 +65,7 @@ document.getElementById('donate_btn-11')
       <p>${userinput} Taka is Donated for famine-2024 at Feni, Bangladesh </p>
       <p>${new Date().toLocaleDateString()}</p>
     `
-      const hestorcontainer=document.getElementById('history-list')
+      const hestorcontainer=document.getElementById('history-list1')
       hestorcontainer.insertBefore(historitem,hestorcontainer.firstChild)
 })
 
@@ -97,7 +97,41 @@ document.getElementById('donate_btn-12')
       <p>${userinput} Taka is Donated for famine-2024 at Feni, Bangladesh </p>
       <p>${new Date().toLocaleDateString()}</p>
     `
-      const hestorcontainer=document.getElementById('history-list')
+      const hestorcontainer=document.getElementById('history-list1')
       hestorcontainer.insertBefore(historitem,hestorcontainer.firstChild)
 })
 
+// cahngeing part
+
+document.getElementById('history-tab').addEventListener('click',()=>{
+      console.log('ok')
+      
+      document.getElementById('history-list').classList.remove('hidden');
+      document.getElementById('card-contioner').classList.add('hidden');
+
+      document.getElementById('history-tab').classList.add(
+            "bg-clifford",
+            "text-white"
+      )
+      document.getElementById('donation-tab').classList.remove(
+            "bg-clifford",
+            "text-white"
+      )
+      
+})
+document.getElementById('donation-tab').addEventListener('click',()=>{
+      console.log('ok')
+      
+      document.getElementById('history-list').classList.add('hidden');
+      document.getElementById('card-contioner').classList.remove('hidden');
+
+      document.getElementById('history-tab').classList.remove(
+            "bg-clifford",
+            "text-white"
+      )
+      document.getElementById('donation-tab').classList.add(
+            "bg-clifford",
+            "text-white"
+      )
+      
+})
